@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Projects</title>
+    <link rel="shortcut icon" href="ampimgnotxt.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="project-list">
+        <h2>🐛 Bugs</h2>
+        <button class="project-button" data-title="User Dashboard"
+            data-description="There are no current bugs on the website!">
+            <span class="pin">🎉</span> There are no current bugs!
+        </button>
+
+    </div>
+
+    <a href="index.html"><button class="Bugs">View Upcoming</button></a>
+
+    <div id="modal" class="modal">
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <button class="close-button" id="close-modal">Close</button>
+    </div>
+
+    <script>
+        document.querySelectorAll(".project-button").forEach(button => {
+            button.addEventListener("click", function () {
+                let modal = document.getElementById("modal");
+                let title = this.getAttribute("data-title");
+                let description = this.getAttribute("data-description");
+
+                document.getElementById("modal-title").textContent = title;
+                document.getElementById("modal-description").textContent = description;
+
+                modal.style.display = "block";
+            });
+        });
+
+        document.getElementById("close-modal").addEventListener("click", function () {
+            document.getElementById("modal").style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>

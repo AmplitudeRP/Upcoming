@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Project List */
+.project-list {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.project-list h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background: #272727;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.project-button:hover {
+    background: #3a3a3a;
+}
+
+.pin {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e1e1e;
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    min-width: 350px;
+    text-align: center;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.close-button {
+    background: #272727;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.close-button:hover {
+    background: #3a3a3a;
+}
+
+.home-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.home-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.Bugs{
+    background: none;
+    color: #207adb;
+    border: none;
+    position: relative;
+    top: 330px;
+    right: 270px;
+    cursor: pointer;
+}
+
+.Bugs:hover{
+    color: #398ee9
+}
